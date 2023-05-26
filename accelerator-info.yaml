@@ -1,0 +1,15 @@
+id: b97c838c-ebbd-4974-823f-d4cac682bfd0
+timestamp: 2023-05-26T17:42:44Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: us-central1-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:d49afe1be8976ae904eb9121fa10f8af03aea247e92a6b8941474bfdf71689e0
+fragments:
+  - name: tap-workload
+    source:
+      image: us-central1-docker.pkg.dev/tap-sandbox-dev/tap-bits/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: Sample
+  projectName: weatherforecast-steeltoe
